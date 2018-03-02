@@ -10,6 +10,6 @@ class Node<T> {
     }
 
     static <T> Node<T> of(T data) {
-        return new Node(data);
+        return new Node<>(data);
     }
 }
