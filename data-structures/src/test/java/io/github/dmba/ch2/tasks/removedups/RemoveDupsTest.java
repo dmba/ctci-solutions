@@ -3,7 +3,7 @@ package io.github.dmba.ch2.tasks.removedups;
 import io.github.dmba.common.linkedlist.Node;
 import org.junit.jupiter.api.Test;
 
-import static io.github.dmba.linkedlist.NodeChainAssert.assertThat;
+import static io.github.dmba.linkedlist.NodeChainAssert.assertThatNode;
 import static io.github.dmba.linkedlist.NodeTestHelper.chainNodes;
 
 public interface RemoveDupsTest {
@@ -16,7 +16,7 @@ public interface RemoveDupsTest {
         createRemoveDups().removeDups(null);
 
         // Then
-        assertThat(null).isNull();
+        assertThatNode(null).isNull();
     }
 
     @Test
@@ -28,7 +28,7 @@ public interface RemoveDupsTest {
         createRemoveDups().removeDups(head);
 
         // Then
-        assertThat(head).isNull();
+        assertThatNode(head).isNull();
     }
 
     @Test
@@ -53,7 +53,7 @@ public interface RemoveDupsTest {
         createRemoveDups().removeDups(head);
 
         // Then
-        assertThat(head)
+        assertThatNode(head)
                 .isNotNull()
                 .isHeadOfSequence("A", "B", "C", "D", "E", "F");
     }
@@ -73,7 +73,7 @@ public interface RemoveDupsTest {
         createRemoveDups().removeDups(head);
 
         // Then
-        assertThat(head)
+        assertThatNode(head)
                 .isNotNull()
                 .isHeadOfSequence("A", "B", "C", "D", "E", "F");
     }

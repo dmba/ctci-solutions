@@ -3,7 +3,7 @@ package io.github.dmba.linkedlist;
 import io.github.dmba.common.linkedlist.Node;
 import org.junit.jupiter.api.Test;
 
-import static io.github.dmba.linkedlist.NodeChainAssert.assertThat;
+import static io.github.dmba.linkedlist.NodeChainAssert.assertThatNode;
 import static io.github.dmba.linkedlist.NodeTestHelper.chainNodes;
 
 public class NodeTest {
@@ -14,7 +14,7 @@ public class NodeTest {
         final Node<String> node = Node.of("A");
 
         // Then
-        assertThat(node)
+        assertThatNode(node)
                 .isNotNull()
                 .isHeadOfSequence("A");
     }
@@ -28,7 +28,7 @@ public class NodeTest {
         final Node<String> newHead = Node.appendToTail(head, "A");
 
         // Then
-        assertThat(newHead)
+        assertThatNode(newHead)
                 .isNotNull()
                 .isHeadOfSequence("A");
     }
@@ -43,7 +43,7 @@ public class NodeTest {
         final Node<String> newHead = Node.appendToTail(head, "C");
 
         // Then
-        assertThat(newHead)
+        assertThatNode(newHead)
                 .isNotNull()
                 .isHeadOfSequence("A", "B", "C");
     }
@@ -60,7 +60,7 @@ public class NodeTest {
         final Node<String> newHead = Node.removeNode(head, nodeB);
 
         // Then
-        assertThat(newHead)
+        assertThatNode(newHead)
                 .isNotNull()
                 .isHeadOfSequence("A", "C");
     }
@@ -77,7 +77,7 @@ public class NodeTest {
         final Node<String> newHead = Node.removeNode(head, nodeA);
 
         // Then
-        assertThat(newHead)
+        assertThatNode(newHead)
                 .isNotNull()
                 .isHeadOfSequence("B", "C");
     }
@@ -94,7 +94,7 @@ public class NodeTest {
         final Node<String> newHead = Node.removeNode(head, nodeC);
 
         // Then
-        assertThat(newHead)
+        assertThatNode(newHead)
                 .isNotNull()
                 .isHeadOfSequence("A", "B");
     }
