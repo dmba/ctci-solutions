@@ -1,4 +1,4 @@
-package io.github.dmba.ch2.tasks.returnkthtolast;
+package io.github.dmba.ch2.tasks.q22returnkthtolast;
 
 import io.github.dmba.common.linkedlist.Node;
 

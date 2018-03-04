@@ -11,4 +11,4 @@
  *          Try using two pointers, where the second one searches ahead of the first one.</li>
  * </ul>
  */
-package io.github.dmba.ch2.tasks.removedups;
+package io.github.dmba.ch2.tasks.q21removedups;

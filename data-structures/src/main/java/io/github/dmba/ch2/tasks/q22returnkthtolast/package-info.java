@@ -23,4 +23,4 @@
  *           When one hits the end of the linked list, where will the other be?</li>
  * </ul>
  */
-package io.github.dmba.ch2.tasks.returnkthtolast;
+package io.github.dmba.ch2.tasks.q22returnkthtolast;

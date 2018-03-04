@@ -19,7 +19,12 @@ public class NodeChainAssert extends AbstractAssert<NodeChainAssert, Node> {
         }
     }
 
+    public void hasData(Object data) {
+        assertThat(this.actual.data).isEqualTo(data);
+    }
+
     public static NodeChainAssert assertThatNode(Node node) {
         return new NodeChainAssert(node);
     }
+
 }

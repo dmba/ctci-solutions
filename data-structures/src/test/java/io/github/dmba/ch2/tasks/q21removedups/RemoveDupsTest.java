@@ -1,4 +1,4 @@
-package io.github.dmba.ch2.tasks.removedups;
+package io.github.dmba.ch2.tasks.q21removedups;
 
 import io.github.dmba.common.linkedlist.Node;
 import org.junit.jupiter.api.Test;
