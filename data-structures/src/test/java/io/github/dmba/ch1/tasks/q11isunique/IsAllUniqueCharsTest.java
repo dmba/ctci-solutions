@@ -29,7 +29,7 @@ public interface IsAllUniqueCharsTest {
         final boolean result = createPredicate().test(str);
 
         // Then
-        //        assertThat(result).isTrue();
+        //        assertThatNode(result).isTrue();
     }
 
     @Test
